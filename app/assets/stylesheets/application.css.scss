@@ -84,3 +84,20 @@ header {
 body {
     padding-top: 70px;
 }
+
+header {
+    @extend .page-header;
+
+    position: relative;
+    padding-bottom: 0px;
+
+    &:first-child {
+        margin-top: 20px;
+    }
+}
+
+ul.actions {
+    @extend .list-unstyled;
+
+    @extend .list-inline;
+}
